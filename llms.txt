@@ -6,13 +6,13 @@ Contact: roshnisubudhi23@gmail.com · LinkedIn: https://www.linkedin.com/in/rosh
 
 ## Key pages
 
-- [Résumé (Markdown)](https://roshnisubudhi6.github.io/portfolio/resume.md): full work history, skills, education and awards in plain text
-- [Résumé (PDF)](https://roshnisubudhi6.github.io/portfolio/Roshni_Subudhi_Resume.pdf): the same résumé as a PDF
-- [Portfolio home](https://roshnisubudhi6.github.io/portfolio/): overview, experience, skills, projects and contact
+- [Résumé (Markdown)](https://roshnisubudhi.com/resume.md): full work history, skills, education and awards in plain text
+- [Résumé (PDF)](https://roshnisubudhi.com/Roshni_Subudhi_Resume.pdf): the same résumé as a PDF
+- [Portfolio home](https://roshnisubudhi.com/): overview, experience, skills, projects and contact
 
 ## Projects
 
-- [rag-plug&play](https://roshnisubudhi6.github.io/portfolio/rag-plug-play.html): open-source n8n template that turns any document into a chatbot (n8n, OpenAI embeddings, Supabase pgvector, GPT-4.1 mini, Postgres memory), with a demo and lessons learned
+- [rag-plug&play](https://roshnisubudhi.com/rag-plug-play.html): open-source n8n template that turns any document into a chatbot (n8n, OpenAI embeddings, Supabase pgvector, GPT-4.1 mini, Postgres memory), with a demo and lessons learned
 - [Code on GitHub](https://github.com/roshnisubudhi6/rag-plug-play)
 
 ## Optional
