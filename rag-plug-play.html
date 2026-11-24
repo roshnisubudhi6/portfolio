@@ -86,7 +86,13 @@ document.addEventListener('click',function(e){
 </section>
 <section class="cs" style="margin-top:72px;display:flex;flex-wrap:wrap;gap:20px 48px;border-top:2px solid #1C1C1C;padding-top:28px">
 <div style="flex:1 1 220px;display:flex;align-items:flex-start;gap:12px"><span style="width:16px;height:16px;background:#D9D7D0;margin-top:7px;flex:none"></span><h2 style="margin:0;font-family:Archivo;font-weight:800;font-size:28px">What I learned</h2></div>
-<div style="flex:3 1 520px;min-width:0;font-size:17px;line-height:1.7;color:#2E2E2B"><p style="margin:0 0 14px"><span style="background:rgba(227,180,72,.35);border-bottom:2px dashed #B08A2E;padding:0 3px">[2–3 sentences: what surprised you — chunking, retrieval quality, memory, cost — and what you'd do differently]</span></p></div>
+<div style="flex:3 1 520px;min-width:0;font-size:17px;line-height:1.7;color:#2E2E2B"><p style="margin:0 0 18px">Building it end to end showed me which parts of RAG are simple and where the real product decisions sit.</p>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px">
+<li style="display:flex;gap:12px"><span aria-hidden="true" style="width:10px;height:10px;background:#B0342A;margin-top:9px;flex:none"></span><span><strong>The plumbing breaks in boring places.</strong> Most of my debugging was setup, not AI: a trailing slash in the Supabase host URL, and knowing what to change in the SQL to use a table other than the default.</span></li>
+<li style="display:flex;gap:12px"><span aria-hidden="true" style="width:10px;height:10px;background:#E3B448;margin-top:9px;flex:none"></span><span><strong>Embeddings are cheap.</strong> OpenAI's text-embedding-3-small costs about $0.02 per million tokens, so indexing a whole rulebook costs almost nothing.</span></li>
+<li style="display:flex;gap:12px"><span aria-hidden="true" style="width:10px;height:10px;background:#2B4C7E;margin-top:9px;flex:none"></span><span><strong>Plain vector search is only the starting point.</strong> For a real product I'd push for hybrid search (meaning plus exact keywords), metadata filters, and a golden dataset of questions with known answers to test against before shipping.</span></li>
+<li style="display:flex;gap:12px"><span aria-hidden="true" style="width:10px;height:10px;background:#1C1C1C;margin-top:9px;flex:none"></span><span><strong>RAG isn't always the answer.</strong> For one short rulebook, a long-context model could read the whole thing. RAG earns its place when the documents are many or keep changing.</span></li>
+</ul></div>
 </section>
 <section class="cs" style="margin-top:72px;display:flex;flex-wrap:wrap;gap:20px 48px;border-top:2px solid #1C1C1C;padding-top:28px">
 <div style="flex:1 1 220px;display:flex;align-items:flex-start;gap:12px"><span style="width:16px;height:16px;background:#1C1C1C;margin-top:7px;flex:none"></span><h2 style="margin:0;font-family:Archivo;font-weight:800;font-size:28px">Try it</h2></div>
