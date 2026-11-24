@@ -1,6 +1,6 @@
 # Roshni Subudhi — Senior Product Manager
 
-Bengaluru, India · roshnisubudhi23@gmail.com · [LinkedIn](https://www.linkedin.com/in/roshnisubudhi/) · [GitHub](https://github.com/roshnisubudhi6) · [Portfolio](https://roshnisubudhi6.github.io/portfolio/) · [Résumé PDF](https://roshnisubudhi6.github.io/portfolio/Roshni_Subudhi_Resume.pdf)
+Bengaluru, India · roshnisubudhi23@gmail.com · [LinkedIn](https://www.linkedin.com/in/roshnisubudhi/) · [GitHub](https://github.com/roshnisubudhi6) · [Portfolio](https://roshnisubudhi.com/) · [Résumé PDF](https://roshnisubudhi.com/Roshni_Subudhi_Resume.pdf)
 
 **Status:** Open to Senior Product Manager roles in payments, platforms and AI, in Bengaluru or remote, and available to start immediately. Most recent role: Expedia Group (Aug 2024 – Feb 2026).
 
@@ -54,7 +54,7 @@ Nov 2015 – Dec 2019 · Mumbai/Hyderabad, India
 
 ## Projects
 
-- **rag-plug&play** — an open-source n8n template that turns any document into a chatbot. Ingests documents, embeds them with OpenAI, stores them in a Supabase vector database, and answers with a GPT-4.1 mini agent with Postgres-backed memory. [Project page](https://roshnisubudhi6.github.io/portfolio/rag-plug-play.html) · [GitHub](https://github.com/roshnisubudhi6/rag-plug-play)
+- **rag-plug&play** — an open-source n8n template that turns any document into a chatbot. Ingests documents, embeds them with OpenAI, stores them in a Supabase vector database, and answers with a GPT-4.1 mini agent with Postgres-backed memory. [Project page](https://roshnisubudhi.com/rag-plug-play.html) · [GitHub](https://github.com/roshnisubudhi6/rag-plug-play)
 - **Personal Finance and Investing 101** — a Notion guide for friends and family starting their personal finance and investing journeys. [Link](https://tinyurl.com/roshnipersonalfinance)
 - **Editorial Intern, The Culture Trip** — researched, wrote and edited about 25 published articles on travel, food, culture and literature, focused on India's culture and heritage. [Author page](https://theculturetrip.com/authors/roshni-s)
 

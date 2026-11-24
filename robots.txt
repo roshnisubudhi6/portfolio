@@ -5,4 +5,4 @@ Allow: /
 # Draft case studies carry a noindex tag instead of being blocked here,
 # so crawlers can still see that tag.
 
-Sitemap: https://roshnisubudhi6.github.io/portfolio/sitemap.xml
+Sitemap: https://roshnisubudhi.com/sitemap.xml
