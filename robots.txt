@@ -1,0 +1,8 @@
+# Search engines and AI agents are welcome to read this portfolio.
+User-agent: *
+Allow: /
+
+# Draft case studies carry a noindex tag instead of being blocked here,
+# so crawlers can still see that tag.
+
+Sitemap: https://roshnisubudhi6.github.io/portfolio/sitemap.xml

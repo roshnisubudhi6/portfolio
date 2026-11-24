@@ -1,0 +1,23 @@
+# Roshni Subudhi
+
+> Senior Product Manager in Bengaluru, India, with 10+ years across payments, loyalty, travel, fintech and e-commerce. Founding PM of JioOnePay at Jio Platforms (₹5,000 Cr / ₹50B monthly payment volume, 30+ merchants) and led Expedia Group's unified global loyalty platform for 50M+ customers. Builds with AI: agentic workflows, LLMs, RAG and MCP. Open to Senior PM roles in payments, platforms and AI, in Bengaluru or remote. Most recent role: Expedia Group (Aug 2024 – Feb 2026).
+
+Contact: roshnisubudhi23@gmail.com · LinkedIn: https://www.linkedin.com/in/roshnisubudhi/ · GitHub: https://github.com/roshnisubudhi6
+
+## Key pages
+
+- [Résumé (Markdown)](https://roshnisubudhi6.github.io/portfolio/resume.md): full work history, skills, education and awards in plain text
+- [Résumé (PDF)](https://roshnisubudhi6.github.io/portfolio/Roshni_Subudhi_Resume.pdf): the same résumé as a PDF
+- [Portfolio home](https://roshnisubudhi6.github.io/portfolio/): overview, experience, skills, projects and contact
+
+## Projects
+
+- [rag-plug&play](https://roshnisubudhi6.github.io/portfolio/rag-plug-play.html): open-source n8n template that turns any document into a chatbot (n8n, OpenAI embeddings, Supabase pgvector, GPT-4.1 mini, Postgres memory), with a demo and lessons learned
+- [Code on GitHub](https://github.com/roshnisubudhi6/rag-plug-play)
+
+## Optional
+
+- [Birding life list](https://roshnisubudhi6.github.io/life-list-of-roshni/)
+- [Goodreads](https://www.goodreads.com/user/show/12447101-roshni)
+
+Note: the JioOnePay and Expedia case-study pages are drafts and not yet ready to cite. Use the résumé for facts about those roles.
