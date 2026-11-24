@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5MC0YB7YQ0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-5MC0YB7YQ0");</script>
+
 <title>rag-plug&amp;play — project</title>
 <meta name="description" content="rag-plug&amp;play: an open-source n8n template that turns any document into a chatbot.">
 <meta property="og:title" content="rag-plug&amp;play — project · Roshni Subudhi">
@@ -109,5 +112,25 @@ document.addEventListener('click',function(e){
 </div>
 </div>
 </div>
+<script id="analytics">
+(function(){
+ if(typeof gtag!=="function")return;
+ var send=function(n,p){try{gtag("event",n,p||{})}catch(e){}};
+ document.addEventListener("click",function(e){
+  var a=e.target.closest&&e.target.closest("a");if(!a)return;
+  var h=a.getAttribute("href")||"",where=a.closest("nav")?"header":(a.closest("#contact")?"footer":(a.closest(".hero")?"hero":"page"));
+  if(/\.pdf$/i.test(h)){send("resume_download",{location:where});return}
+  if(h.indexOf("mailto:")===0){send("contact_click",{method:"email",location:where});return}
+  if(/linkedin\.com/.test(h)){send("contact_click",{method:"linkedin",location:where});return}
+  if(/github\.com\/roshnisubudhi6\/?$/.test(h)){send("contact_click",{method:"github",location:where});return}
+  if(/x\.com\//.test(h)){send("contact_click",{method:"x",location:where});return}
+  if(/birds\.roshnisubudhi\.com/.test(h)){send("open_birding",{location:where});return}
+  if(/goodreads\.com/.test(h)){send("open_goodreads",{location:where});return}
+  if(/rag-plug-play/.test(h)){send("open_project",{project:"rag-plug&play",target:/github\.com/.test(h)?"github":"page"});return}
+  if(/(jioonepay|expedia)\.html/.test(h)){send("open_case_study",{case_study:h.replace(".html","")});return}
+ },true);
+ var v=document.querySelector("video");if(v){var once=false;v.addEventListener("play",function(){if(!once){once=true;send("demo_play",{project:"rag-plug&play"})}})}
+})();
+</script>
 </body>
 </html>
