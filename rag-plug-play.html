@@ -26,9 +26,21 @@ a{color:#1C1C1C;text-decoration:none}a:hover{color:#B0342A}
 <meta property="og:url" content="https://roshnisubudhi6.github.io/portfolio/rag-plug-play.html">
 <style>html{scroll-behavior:smooth}</style>
 <script>
-(function(){try{if('scrollRestoration' in history)history.scrollRestoration='manual';}catch(e){}
-window.addEventListener('load',function(){var n=performance.getEntriesByType&&performance.getEntriesByType('navigation')[0];if(!location.hash&&!(n&&n.type==='back_forward'))window.scrollTo(0,0);});
-document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.mpanel a');if(a){var d=a.closest('details');if(d)d.removeAttribute('open');}});})();
+(function(){
+try{if('scrollRestoration' in history)history.scrollRestoration='manual';}catch(e){}
+function go(id,smooth){var t=id&&document.getElementById(id);if(t)t.scrollIntoView({behavior:smooth?'smooth':'auto',block:'start'});}
+function clean(){if(location.hash)history.replaceState(null,'',location.pathname+location.search);}
+var H=location.hash.slice(1);clean();
+window.addEventListener('load',function(){var n=performance.getEntriesByType&&performance.getEntriesByType('navigation')[0];
+ if(n&&n.type==='back_forward')return;
+ if(H&&n&&n.type==='navigate'&&document.referrer&&document.referrer.indexOf(location.host)>-1){go(H,false);}else{window.scrollTo(0,0);}
+});
+document.addEventListener('click',function(e){
+ var d=document.querySelector('.mnav[open]');
+ if(d&&!d.contains(e.target))d.removeAttribute('open');
+ var a=e.target.closest&&e.target.closest('a[href^="#"]');
+ if(a){var id=a.getAttribute('href').slice(1);e.preventDefault();var dd=a.closest('details');if(dd)dd.removeAttribute('open');if(id==='top'||!id){window.scrollTo({top:0,behavior:'smooth'});}else go(id,true);}
+});})();
 </script>
 </head>
 <body>

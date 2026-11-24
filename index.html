@@ -24,9 +24,11 @@ body{margin:0;background:#F5F3EE}
 a{color:#1C1C1C;text-decoration:none}a:hover{color:#B0342A}
 .nav .nm{font-family:Archivo;font-weight:800;font-size:18px;letter-spacing:-.01em;opacity:0;transform:translateX(-8px);transition:opacity .35s ease,transform .35s ease;white-space:nowrap}.nav.sc .nm{opacity:1;transform:none}
 @media (min-width:721px){.nav{position:sticky;top:0;z-index:50;background:#F5F3EE;box-shadow:0 0 0 100vmax #F5F3EE;clip-path:inset(0 -100vmax -2px);transition:padding .3s ease,border-color .3s;border-bottom:2px solid transparent}.nav.sc{padding:14px 0!important;border-bottom-color:#1C1C1C}}
-.mnav{display:none}.mnav summary{list-style:none;display:flex;align-items:center;gap:10px;min-height:44px;box-sizing:border-box;padding:10px 14px;border:2px solid #1C1C1C;background:#FBFAF7;font-weight:700;font-size:14px;cursor:pointer}.mnav summary::-webkit-details-marker{display:none}
+.mnav{display:none}.mnav summary{list-style:none;display:flex;align-items:center;gap:10px;min-height:44px;min-width:96px;justify-content:space-between;box-sizing:border-box;padding:10px 14px;border:2px solid #1C1C1C;background:#FBFAF7;font-weight:700;font-size:14px;cursor:pointer}.mnav summary::-webkit-details-marker{display:none}
 .bars{display:flex;flex-direction:column;gap:3px}.bars b{display:block;width:16px;height:2px;background:currentColor}.mnav[open] summary{background:#1C1C1C;color:#fff}
-.mpanel{position:absolute;left:0;right:0;top:calc(100% + 2px);z-index:60;background:#1C1C1C;padding:4px;display:grid;gap:4px}.mpanel a{display:block;background:#FBFAF7;padding:14px 16px;border-left:8px solid var(--c);font-weight:600;font-size:16px;color:#1C1C1C}
+.mpanel{position:absolute;right:0;top:calc(100% + 6px);z-index:60;width:230px;background:#FBFAF7;border:2px solid #1C1C1C;box-shadow:5px 5px 0 #1C1C1C;padding:6px 0;display:flex;flex-direction:column;animation:mdrop .18s ease-out}.mpanel a{display:flex;align-items:center;gap:12px;padding:11px 18px;font-weight:500;font-size:15px;color:#1C1C1C}.mpanel a:before{content:"";width:8px;height:8px;flex:none;background:var(--c)}.mpanel a:active{background:#EFEDE6}
+.mc{display:none}.mnav[open] .mo{display:none}.mnav[open] .mc{display:inline}@keyframes mdrop{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+section[id],footer[id],[id=birding],[id=books]{scroll-margin-top:96px}
 .nl{position:relative;padding:6px 0}.nl:after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--c);transform:scaleX(0);transform-origin:left;transition:transform .35s ease}.nl:hover:after{transform:scaleX(1)}
 .lg i{display:block;transform:scale(0);transition:transform .5s cubic-bezier(.3,1.4,.5,1) var(--d),flex-grow .6s cubic-bezier(.6,0,.2,1)}.lg.in i{transform:scale(1)}
 .lg:hover .a{flex-grow:1!important}.lg:hover .b{flex-grow:3!important}.lg:hover .c{flex-grow:2!important}.lg:hover .e{flex-grow:1!important}
@@ -55,9 +57,21 @@ h3[style*="font-size:46px"],h2[style*="font-size:52px"]{font-size:34px!important
 <script>
 window.addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.querySelectorAll('.hero,.lg').forEach(function(e){e.classList.add('in')})},60);var n=document.querySelector('.nav');function sc(){if(n)n.classList.toggle('sc',window.scrollY>420)}window.addEventListener('scroll',sc,{passive:true});sc();});
 </script><script>
-(function(){try{if('scrollRestoration' in history)history.scrollRestoration='manual';}catch(e){}
-window.addEventListener('load',function(){var n=performance.getEntriesByType&&performance.getEntriesByType('navigation')[0];if(!location.hash&&!(n&&n.type==='back_forward'))window.scrollTo(0,0);});
-document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.mpanel a');if(a){var d=a.closest('details');if(d)d.removeAttribute('open');}});})();
+(function(){
+try{if('scrollRestoration' in history)history.scrollRestoration='manual';}catch(e){}
+function go(id,smooth){var t=id&&document.getElementById(id);if(t)t.scrollIntoView({behavior:smooth?'smooth':'auto',block:'start'});}
+function clean(){if(location.hash)history.replaceState(null,'',location.pathname+location.search);}
+var H=location.hash.slice(1);clean();
+window.addEventListener('load',function(){var n=performance.getEntriesByType&&performance.getEntriesByType('navigation')[0];
+ if(n&&n.type==='back_forward')return;
+ if(H&&n&&n.type==='navigate'&&document.referrer&&document.referrer.indexOf(location.host)>-1){go(H,false);}else{window.scrollTo(0,0);}
+});
+document.addEventListener('click',function(e){
+ var d=document.querySelector('.mnav[open]');
+ if(d&&!d.contains(e.target))d.removeAttribute('open');
+ var a=e.target.closest&&e.target.closest('a[href^="#"]');
+ if(a){var id=a.getAttribute('href').slice(1);e.preventDefault();var dd=a.closest('details');if(dd)dd.removeAttribute('open');if(id==='top'||!id){window.scrollTo({top:0,behavior:'smooth'});}else go(id,true);}
+});})();
 </script>
 </head>
 <body>
@@ -75,7 +89,7 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 <div class="navl" style="display:flex;flex-wrap:wrap;gap:30px;font-weight:500;font-size:15px;color:#4A4A46">
 <a class="nl" href="#about" style="--c:#E3B448">About</a><a class="nl" href="#work" style="--c:#B0342A">Work</a><a class="nl" href="#projects" style="--c:#2B4C7E">Building with AI</a><a class="nl" href="#birding" style="--c:#2B4C7E">Birding</a><a class="nl" href="#books" style="--c:#E3B448">Books</a><a class="nl" href="#contact" style="--c:#B0342A">Contact</a>
 </div>
-<details class="mnav"><summary aria-label="Menu"><span>Menu</span><span class="bars" aria-hidden="true"><b></b><b></b><b></b></span></summary><div class="mpanel"><a href="#about" style="--c:#E3B448">About</a><a href="#work" style="--c:#B0342A">Work</a><a href="#projects" style="--c:#2B4C7E">Building with AI</a><a href="#birding" style="--c:#2B4C7E">Birding</a><a href="#books" style="--c:#E3B448">Books</a><a href="#contact" style="--c:#B0342A">Contact</a></div></details>
+<details class="mnav"><summary aria-label="Menu"><span class="mo">Menu</span><span class="mc">Close</span><span class="bars" aria-hidden="true"><b></b><b></b><b></b></span></summary><div class="mpanel"><a href="#about" style="--c:#E3B448">About</a><a href="#work" style="--c:#B0342A">Work</a><a href="#projects" style="--c:#2B4C7E">Building with AI</a><a href="#birding" style="--c:#2B4C7E">Birding</a><a href="#books" style="--c:#E3B448">Books</a><a href="#contact" style="--c:#B0342A">Contact</a></div></details>
 </nav>
 
 <section id="top" class="hero" data-hero="1" style="margin-top:16px;background:#1C1C1C;padding:6px;display:flex;flex-wrap:wrap;gap:6px">
