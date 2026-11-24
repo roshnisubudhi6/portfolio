@@ -24,6 +24,14 @@ body{margin:0;background:#F5F3EE}
 a{color:#1C1C1C;text-decoration:none}a:hover{color:#B0342A}
 .nav .nm{font-family:Archivo;font-weight:800;font-size:18px;letter-spacing:-.01em;opacity:0;transform:translateX(-8px);transition:opacity .35s ease,transform .35s ease;white-space:nowrap}.nav.sc .nm{opacity:1;transform:none}
 @media (min-width:721px){.nav{position:sticky;top:0;z-index:50;background:#F5F3EE;box-shadow:0 0 0 100vmax #F5F3EE;clip-path:inset(0 -100vmax -2px);transition:padding .3s ease,border-color .3s;border-bottom:2px solid transparent}.nav.sc{padding:14px 0!important;border-bottom-color:#1C1C1C}}
+.soc{display:flex;flex-direction:column;gap:3px;height:46px;background:#1C1C1C;padding:3px;box-sizing:border-box;flex:none}
+.soc .r{display:flex;gap:3px}.soc .r1{flex:3}.soc .r2{flex:1}.soc .r2 i{display:block}
+.soc a{display:flex;align-items:center;justify-content:center;font-size:16px;line-height:1;transition:filter .2s ease}
+.soc a .fa-brands{transition:transform .25s ease}.soc a:hover .fa-brands,.soc a:focus-visible .fa-brands{transform:scale(1.18) rotate(-4deg)}.soc a:hover{filter:brightness(1.12)}
+.soc a:focus-visible{outline:2px solid #E3B448;outline-offset:2px}
+.rgt{display:flex;align-items:center;gap:30px}
+@media (max-width:720px){.rgt{gap:10px}.soc{height:44px}}
+@media (prefers-reduced-motion:reduce){.soc a .fa-brands{transition:none}}
 .mnav{display:none}.mnav summary{list-style:none;display:flex;align-items:center;gap:10px;min-height:44px;min-width:96px;justify-content:space-between;box-sizing:border-box;padding:10px 14px;border:2px solid #1C1C1C;background:#FBFAF7;font-weight:700;font-size:14px;cursor:pointer}.mnav summary::-webkit-details-marker{display:none}
 .bars{display:flex;flex-direction:column;gap:3px}.bars b{display:block;width:16px;height:2px;background:currentColor}.mnav[open] summary{background:#1C1C1C;color:#fff}
 .mpanel{position:absolute;right:0;top:calc(100% + 6px);z-index:60;width:230px;background:#FBFAF7;border:2px solid #1C1C1C;box-shadow:5px 5px 0 #1C1C1C;padding:6px 0;display:flex;flex-direction:column;animation:mdrop .18s ease-out}.mpanel a{display:flex;align-items:center;gap:12px;padding:11px 18px;font-weight:500;font-size:15px;color:#1C1C1C}.mpanel a:before{content:"";width:8px;height:8px;flex:none;background:var(--c)}.mpanel a:active{background:#EFEDE6}
@@ -88,10 +96,16 @@ document.addEventListener('click',function(e){
 </span>
 <span class="nm">Roshni Subudhi</span>
 </a>
-<div class="navl" style="display:flex;flex-wrap:wrap;gap:30px;font-weight:500;font-size:15px;color:#4A4A46">
-<a class="nl" href="#about" style="--c:#E3B448">About</a><a class="nl" href="#work" style="--c:#B0342A">Work</a><a class="nl" href="#projects" style="--c:#2B4C7E">Building with AI</a><a class="nl" href="https://roshnisubudhi6.github.io/life-list-of-roshni/" target="_blank" rel="noopener" style="--c:#2B4C7E">Birding</a><a class="nl" href="https://www.goodreads.com/user/show/12447101-roshni" target="_blank" rel="noopener" style="--c:#E3B448">Books</a><a class="nl" href="#contact" style="--c:#B0342A">Contact</a>
+<div class="rgt">
+<div class="navl" style="display:flex;flex-wrap:wrap;gap:30px;align-items:center;font-weight:500;font-size:15px;color:#4A4A46">
+<a class="nl" href="#about" style="--c:#E3B448">About</a><a class="nl" href="#work" style="--c:#B0342A">Work</a><a class="nl" href="#projects" style="--c:#2B4C7E">Building with AI</a><a class="nl" href="https://roshnisubudhi6.github.io/life-list-of-roshni/" target="_blank" rel="noopener" style="--c:#2B4C7E">Birding</a><a class="nl" href="https://www.goodreads.com/user/show/12447101-roshni" target="_blank" rel="noopener" style="--c:#E3B448">Books</a>
 </div>
-<details class="mnav"><summary aria-label="Menu"><span class="mo">Menu</span><span class="mc">Close</span><span class="bars" aria-hidden="true"><b></b><b></b><b></b></span></summary><div class="mpanel"><a href="#about" style="--c:#E3B448">About</a><a href="#work" style="--c:#B0342A">Work</a><a href="#projects" style="--c:#2B4C7E">Building with AI</a><a href="https://roshnisubudhi6.github.io/life-list-of-roshni/" target="_blank" rel="noopener" style="--c:#2B4C7E">Birding</a><a href="https://www.goodreads.com/user/show/12447101-roshni" target="_blank" rel="noopener" style="--c:#E3B448">Books</a><a href="#contact" style="--c:#B0342A">Contact</a></div></details>
+<span class="soc" role="group" aria-label="Find me online">
+<span class="r r1"><a href="https://www.linkedin.com/in/roshnisubudhi/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn" style="width:38px;background:#2B4C7E;color:#fff"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a><a href="https://github.com/roshnisubudhi6" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub" style="width:32px;background:#FBFAF7;color:#1C1C1C"><i class="fa-brands fa-github" aria-hidden="true"></i></a><a href="https://x.com/roshmalaai" target="_blank" rel="noopener" aria-label="X, @roshmalaai" title="X · @roshmalaai" style="width:38px;background:#B0342A;color:#fff"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></span>
+<span class="r r2" aria-hidden="true"><i style="flex:2;background:#E3B448"></i><i style="flex:1;background:#FBFAF7"></i></span>
+</span>
+<details class="mnav"><summary aria-label="Menu"><span class="mo">Menu</span><span class="mc">Close</span><span class="bars" aria-hidden="true"><b></b><b></b><b></b></span></summary><div class="mpanel"><a href="#about" style="--c:#E3B448">About</a><a href="#work" style="--c:#B0342A">Work</a><a href="#projects" style="--c:#2B4C7E">Building with AI</a><a href="https://roshnisubudhi6.github.io/life-list-of-roshni/" target="_blank" rel="noopener" style="--c:#2B4C7E">Birding</a><a href="https://www.goodreads.com/user/show/12447101-roshni" target="_blank" rel="noopener" style="--c:#E3B448">Books</a></div></details>
+</div>
 </nav>
 
 <section id="top" class="hero" data-hero="1" style="margin-top:16px;background:#1C1C1C;padding:6px;display:flex;flex-wrap:wrap;gap:6px">
