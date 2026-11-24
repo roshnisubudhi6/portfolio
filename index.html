@@ -7,7 +7,7 @@
 <meta name="description" content="Roshni Subudhi — Product Manager in payments, loyalty and AI. Founding PM of JioOnePay (₹50B monthly volume) and global loyalty at Expedia (50M+ customers).">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Roshni Subudhi — Product Manager · Payments, Loyalty &amp; AI">
-<meta property="og:description" content="I build the platforms businesses run on and the experiences their customers come back for — now with AI.">
+<meta property="og:description" content="I build the platforms businesses run on and the experiences their customers come back for. Now with AI.">
 <meta property="og:image" content="https://roshnisubudhi6.github.io/portfolio/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -24,6 +24,9 @@ body{margin:0;background:#F5F3EE}
 a{color:#1C1C1C;text-decoration:none}a:hover{color:#B0342A}
 .nav .nm{font-family:Archivo;font-weight:800;font-size:18px;letter-spacing:-.01em;opacity:0;transform:translateX(-8px);transition:opacity .35s ease,transform .35s ease;white-space:nowrap}.nav.sc .nm{opacity:1;transform:none}
 @media (min-width:721px){.nav{position:sticky;top:0;z-index:50;background:#F5F3EE;box-shadow:0 0 0 100vmax #F5F3EE;clip-path:inset(0 -100vmax -2px);transition:padding .3s ease,border-color .3s;border-bottom:2px solid transparent}.nav.sc{padding:14px 0!important;border-bottom-color:#1C1C1C}}
+.mnav{display:none}.mnav summary{list-style:none;display:flex;align-items:center;gap:10px;min-height:44px;box-sizing:border-box;padding:10px 14px;border:2px solid #1C1C1C;background:#FBFAF7;font-weight:700;font-size:14px;cursor:pointer}.mnav summary::-webkit-details-marker{display:none}
+.bars{display:flex;flex-direction:column;gap:3px}.bars b{display:block;width:16px;height:2px;background:currentColor}.mnav[open] summary{background:#1C1C1C;color:#fff}
+.mpanel{position:absolute;left:0;right:0;top:calc(100% + 2px);z-index:60;background:#1C1C1C;padding:4px;display:grid;gap:4px}.mpanel a{display:block;background:#FBFAF7;padding:14px 16px;border-left:8px solid var(--c);font-weight:600;font-size:16px;color:#1C1C1C}
 .nl{position:relative;padding:6px 0}.nl:after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--c);transform:scaleX(0);transform-origin:left;transition:transform .35s ease}.nl:hover:after{transform:scaleX(1)}
 .lg i{display:block;transform:scale(0);transition:transform .5s cubic-bezier(.3,1.4,.5,1) var(--d),flex-grow .6s cubic-bezier(.6,0,.2,1)}.lg.in i{transform:scale(1)}
 .lg:hover .a{flex-grow:1!important}.lg:hover .b{flex-grow:3!important}.lg:hover .c{flex-grow:2!important}.lg:hover .e{flex-grow:1!important}
@@ -33,9 +36,9 @@ a{color:#1C1C1C;text-decoration:none}a:hover{color:#B0342A}
 .sk{transition:transform .3s ease}.sk:hover{transform:translateY(-4px)}
 .bw{transition:transform .3s ease,box-shadow .3s ease}.bw:hover{transform:translate(-6px,-6px);box-shadow:6px 6px 0 #1C1C1C}
 @media (max-width:720px){
-.wrap{padding:0 18px 56px!important}.nav{padding:18px 0 8px!important;gap:10px!important}
+.wrap{padding:0 18px 56px!important}
 .navl::-webkit-scrollbar{display:none}
-.navl{flex-wrap:nowrap!important;overflow-x:auto;gap:8px!important;width:100%;font-size:14px!important;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:4px}.navl a{flex:none;white-space:nowrap;padding:10px 14px!important;background:#FBFAF7;border:2px solid #1C1C1C;border-left:6px solid var(--c);color:#1C1C1C!important;font-weight:600}.navl a:after{display:none}.nav .nm{display:none}
+.navl{display:none!important}.nav{flex-wrap:nowrap!important;position:relative;padding:14px 0!important}.nav .nm{display:none}.mnav{display:block!important}
 .redp{padding:34px 26px!important;min-height:340px!important}.redp p{font-size:18px!important}.redp p:first-child{font-size:12px!important}
 [data-hero]{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))}.hw{display:contents!important}.redp{grid-column:1/-1;order:1}.hint{grid-column:1/-1;order:2}.hyrs{grid-column:span 3;order:3;padding:22px!important}.hblue{grid-column:span 1;order:4;min-height:0!important}.hyel{grid-column:span 1;order:5;min-height:44px}.hgray{grid-column:span 3;order:6;min-height:44px}
 [style*="margin-top:130px"]{margin-top:72px!important}h2[style*="font-size:36px"]{font-size:28px!important}
@@ -51,6 +54,10 @@ h3[style*="font-size:46px"],h2[style*="font-size:52px"]{font-size:34px!important
 <style>html{scroll-behavior:smooth}</style>
 <script>
 window.addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.querySelectorAll('.hero,.lg').forEach(function(e){e.classList.add('in')})},60);var n=document.querySelector('.nav');function sc(){if(n)n.classList.toggle('sc',window.scrollY>420)}window.addEventListener('scroll',sc,{passive:true});sc();});
+</script><script>
+(function(){try{if('scrollRestoration' in history)history.scrollRestoration='manual';}catch(e){}
+window.addEventListener('load',function(){var n=performance.getEntriesByType&&performance.getEntriesByType('navigation')[0];if(!location.hash&&!(n&&n.type==='back_forward'))window.scrollTo(0,0);});
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.mpanel a');if(a){var d=a.closest('details');if(d)d.removeAttribute('open');}});})();
 </script>
 </head>
 <body>
@@ -68,6 +75,7 @@ window.addEventListener('DOMContentLoaded',function(){setTimeout(function(){docu
 <div class="navl" style="display:flex;flex-wrap:wrap;gap:30px;font-weight:500;font-size:15px;color:#4A4A46">
 <a class="nl" href="#about" style="--c:#E3B448">About</a><a class="nl" href="#work" style="--c:#B0342A">Work</a><a class="nl" href="#projects" style="--c:#2B4C7E">Building with AI</a><a class="nl" href="#birding" style="--c:#2B4C7E">Birding</a><a class="nl" href="#books" style="--c:#E3B448">Books</a><a class="nl" href="#contact" style="--c:#B0342A">Contact</a>
 </div>
+<details class="mnav"><summary aria-label="Menu"><span>Menu</span><span class="bars" aria-hidden="true"><b></b><b></b><b></b></span></summary><div class="mpanel"><a href="#about" style="--c:#E3B448">About</a><a href="#work" style="--c:#B0342A">Work</a><a href="#projects" style="--c:#2B4C7E">Building with AI</a><a href="#birding" style="--c:#2B4C7E">Birding</a><a href="#books" style="--c:#E3B448">Books</a><a href="#contact" style="--c:#B0342A">Contact</a></div></details>
 </nav>
 
 <section id="top" class="hero" data-hero="1" style="margin-top:16px;background:#1C1C1C;padding:6px;display:flex;flex-wrap:wrap;gap:6px">
@@ -76,7 +84,7 @@ window.addEventListener('DOMContentLoaded',function(){setTimeout(function(){docu
 <p style="margin:0;font-family:Archivo;font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;opacity:.85">Product Manager · Payments, Loyalty &amp; AI</p>
 <div>
 <h1 style="margin:0;font-family:Archivo;font-weight:900;font-size:clamp(46px,13vw,120px);line-height:.9;letter-spacing:-.03em">Roshni<br>Subudhi</h1>
-<p style="margin:22px 0 0;font-family:Archivo;font-weight:500;font-size:23px">I build the platforms businesses run on and the experiences their customers come back for — now with AI.</p>
+<p style="margin:22px 0 0;font-family:Archivo;font-weight:500;font-size:23px">I build the platforms businesses run on and the experiences their customers come back for. Now with AI.</p>
 </div>
 </div>
 <div class="hw" style="display:flex;flex-wrap:wrap;gap:6px">
