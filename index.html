@@ -22,6 +22,8 @@
 <style>
 body{margin:0;background:#F5F3EE}
 a{color:#1C1C1C;text-decoration:none}a:hover{color:#B0342A}
+.nav .nm{font-family:Archivo;font-weight:800;font-size:18px;letter-spacing:-.01em;opacity:0;transform:translateX(-8px);transition:opacity .35s ease,transform .35s ease;white-space:nowrap}.nav.sc .nm{opacity:1;transform:none}
+@media (min-width:721px){.nav{position:sticky;top:0;z-index:50;background:#F5F3EE;box-shadow:0 0 0 100vmax #F5F3EE;clip-path:inset(0 -100vmax -2px);transition:padding .3s ease,border-color .3s;border-bottom:2px solid transparent}.nav.sc{padding:14px 0!important;border-bottom-color:#1C1C1C}}
 .nl{position:relative;padding:6px 0}.nl:after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--c);transform:scaleX(0);transform-origin:left;transition:transform .35s ease}.nl:hover:after{transform:scaleX(1)}
 .lg i{display:block;transform:scale(0);transition:transform .5s cubic-bezier(.3,1.4,.5,1) var(--d),flex-grow .6s cubic-bezier(.6,0,.2,1)}.lg.in i{transform:scale(1)}
 .lg:hover .a{flex-grow:1!important}.lg:hover .b{flex-grow:3!important}.lg:hover .c{flex-grow:2!important}.lg:hover .e{flex-grow:1!important}
@@ -33,9 +35,9 @@ a{color:#1C1C1C;text-decoration:none}a:hover{color:#B0342A}
 @media (max-width:720px){
 .wrap{padding:0 18px 56px!important}.nav{padding:18px 0 8px!important;gap:10px!important}
 .navl::-webkit-scrollbar{display:none}
-.navl{flex-wrap:nowrap!important;overflow-x:auto;gap:22px!important;width:100%;font-size:14px!important;-webkit-overflow-scrolling:touch;scrollbar-width:none}.navl a{padding:12px 0;white-space:nowrap}
+.navl{flex-wrap:nowrap!important;overflow-x:auto;gap:8px!important;width:100%;font-size:14px!important;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:4px}.navl a{flex:none;white-space:nowrap;padding:10px 14px!important;background:#FBFAF7;border:2px solid #1C1C1C;border-left:6px solid var(--c);color:#1C1C1C!important;font-weight:600}.navl a:after{display:none}.nav .nm{display:none}
 .redp{padding:34px 26px!important;min-height:340px!important}.redp p{font-size:18px!important}.redp p:first-child{font-size:12px!important}
-.hcol{flex-direction:row!important;flex-wrap:wrap}.hgray{flex:1 1 60px!important;min-height:110px}.hcol>div:nth-child(2){flex:3 1 180px!important}.hyel{flex:1 1 60px!important;min-height:110px}
+[data-hero]{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))}.hw{display:contents!important}.redp{grid-column:1/-1;order:1}.hint{grid-column:1/-1;order:2}.hyrs{grid-column:span 3;order:3;padding:22px!important}.hblue{grid-column:span 1;order:4;min-height:0!important}.hyel{grid-column:span 1;order:5;min-height:44px}.hgray{grid-column:span 3;order:6;min-height:44px}
 [style*="margin-top:130px"]{margin-top:72px!important}h2[style*="font-size:36px"]{font-size:28px!important}
 [style*="padding:32px"],[style*="padding:30px 32px"]{padding:22px!important}[style*="padding:44px"],[style*="padding:48px"]{padding:26px!important}
 .abt{padding-left:18px!important}.abt p:first-child{font-size:21px!important}
@@ -43,17 +45,15 @@ h3[style*="font-size:46px"],h2[style*="font-size:52px"]{font-size:34px!important
 .fcol{flex-direction:row!important;flex:1 1 100%!important;height:70px}.fcol>*{flex:1 1 0!important}
 }
 @media (prefers-reduced-motion:reduce){.lg i,.hero .pl,.bar,.sk{transition:transform .3s ease}.sk:hover{transform:translateY(-4px)}
-.bw{transition:none!important;opacity:1!
+.bw{transition:none!important;opacity:1!important;transform:none!important}}
+</style>
 <meta property="og:url" content="https://roshnisubudhi6.github.io/portfolio/">
 <style>html{scroll-behavior:smooth}</style>
 <script>
-window.addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.querySelectorAll('.hero,.lg').forEach(function(e){e.classList.add('in')})},60)});
+window.addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.querySelectorAll('.hero,.lg').forEach(function(e){e.classList.add('in')})},60);var n=document.querySelector('.nav');function sc(){if(n)n.classList.toggle('sc',window.scrollY>420)}window.addEventListener('scroll',sc,{passive:true});sc();});
 </script>
 </head>
 <body>
-important;transform:none!important}}
-</style>
-
 <div style="background:#F5F3EE;color:#1C1C1C;font-family:Inter,system-ui,sans-serif;min-height:100vh">
 <div class="wrap" style="max-width:1240px;margin:0 auto;padding:0 32px 80px;box-sizing:border-box">
 
@@ -63,14 +63,15 @@ important;transform:none!important}}
 <span style="display:flex;gap:3px;flex:3"><i class="a" style="flex:3;background:#B0342A;--d:.1s"></i><i class="b" style="flex:1;background:#FBFAF7;--d:.25s"></i></span>
 <span style="display:flex;gap:3px;flex:1"><i class="c" style="flex:1;background:#FBFAF7;--d:.4s"></i><i class="d" style="flex:1;background:#E3B448;--d:.55s"></i><i class="e" style="flex:2;background:#2B4C7E;--d:.7s"></i></span>
 </span>
+<span class="nm">Roshni Subudhi</span>
 </a>
 <div class="navl" style="display:flex;flex-wrap:wrap;gap:30px;font-weight:500;font-size:15px;color:#4A4A46">
 <a class="nl" href="#about" style="--c:#E3B448">About</a><a class="nl" href="#work" style="--c:#B0342A">Work</a><a class="nl" href="#projects" style="--c:#2B4C7E">Building with AI</a><a class="nl" href="#birding" style="--c:#2B4C7E">Birding</a><a class="nl" href="#books" style="--c:#E3B448">Books</a><a class="nl" href="#contact" style="--c:#B0342A">Contact</a>
 </div>
 </nav>
 
-<section id="top" class="hero" style="margin-top:16px;background:#1C1C1C;padding:6px;display:flex;flex-wrap:wrap;gap:6px">
-<div style="flex:3 1 560px;display:flex;flex-direction:column;gap:6px">
+<section id="top" class="hero" data-hero="1" style="margin-top:16px;background:#1C1C1C;padding:6px;display:flex;flex-wrap:wrap;gap:6px">
+<div class="hw" style="flex:3 1 560px;display:flex;flex-direction:column;gap:6px">
 <div class="pl redp" style="--d:.05s;background:#B0342A;color:#fff;padding:56px 52px;min-height:420px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;gap:40px">
 <p style="margin:0;font-family:Archivo;font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;opacity:.85">Product Manager · Payments, Loyalty &amp; AI</p>
 <div>
@@ -78,18 +79,18 @@ important;transform:none!important}}
 <p style="margin:22px 0 0;font-family:Archivo;font-weight:500;font-size:23px">I build the platforms businesses run on and the experiences their customers come back for — now with AI.</p>
 </div>
 </div>
-<div style="display:flex;flex-wrap:wrap;gap:6px">
-<div class="pl" style="--d:.3s;background:#FBFAF7;padding:30px 32px;flex:5 1 320px">
+<div class="hw" style="display:flex;flex-wrap:wrap;gap:6px">
+<div class="pl hint" style="--d:.3s;background:#FBFAF7;padding:30px 32px;flex:5 1 320px">
 <p style="margin:0 0 14px;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#1C1C1C"><span style="width:10px;height:10px;background:#2B4C7E;flex:none"></span>Open to Senior PM roles · payments, platforms &amp; AI</p>
 <p style="margin:0;font-size:17px;line-height:1.65;color:#2E2E2B">Product-led growth and 0→1 launches. I build the infrastructure other products run on — payments orchestration, global loyalty platforms — and use GenAI to make product work faster.</p>
 <p style="margin:20px 0 0;display:flex;flex-wrap:wrap;gap:28px;font-family:Archivo;font-weight:700;font-size:16px"><a class="nl" href="#work" style="--c:#B0342A">See the work →</a><a class="nl" href="#contact" style="--c:#2B4C7E">Get in touch →</a></p>
 </div>
-<div class="pl" style="--d:.55s;background:#2B4C7E;flex:1 1 90px;min-height:90px"></div>
+<div class="pl hblue" style="--d:.55s;background:#2B4C7E;flex:1 1 90px;min-height:90px"></div>
 </div>
 </div>
-<div class="hcol" style="flex:1 1 220px;display:flex;flex-direction:column;gap:6px">
+<div class="hw" style="flex:1 1 220px;display:flex;flex-direction:column;gap:6px">
 <div class="pl hgray" style="--d:.2s;background:#D9D7D0;flex:3 1 160px"></div>
-<div class="pl" style="--d:.4s;background:#FBFAF7;padding:28px;flex:2 1 150px;display:flex;flex-direction:column;justify-content:flex-end">
+<div class="pl hyrs" style="--d:.4s;background:#FBFAF7;padding:28px;flex:2 1 150px;display:flex;flex-direction:column;justify-content:flex-end">
 <p style="margin:0;font-family:Archivo;font-weight:900;font-size:44px;line-height:1">10+ yrs</p>
 <p style="margin:8px 0 0;font-size:14px;line-height:1.5;color:#4A4A46">Fintech · Payments · Travel-tech<br>Bengaluru, India</p>
 </div>
