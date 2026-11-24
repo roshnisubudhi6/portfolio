@@ -68,5 +68,5 @@ Nov 2015 – Dec 2019 · Mumbai/Hyderabad, India
 
 ## Beyond work
 
-- Birding: [life list](https://roshnisubudhi6.github.io/life-list-of-roshni/)
+- Birding: [life list](https://birds.roshnisubudhi.com/)
 - Reading: [Goodreads](https://www.goodreads.com/user/show/12447101-roshni)
