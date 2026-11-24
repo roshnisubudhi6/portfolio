@@ -2,7 +2,7 @@
 
 Bengaluru, India · roshnisubudhi23@gmail.com · [LinkedIn](https://www.linkedin.com/in/roshnisubudhi/) · [GitHub](https://github.com/roshnisubudhi6) · [Portfolio](https://roshnisubudhi6.github.io/portfolio/) · [Résumé PDF](https://roshnisubudhi6.github.io/portfolio/Roshni_Subudhi_Resume.pdf)
 
-**Status:** Open to Senior Product Manager roles in payments, platforms and AI, in Bengaluru or remote. Most recent role: Expedia Group (Aug 2024 – Feb 2026).
+**Status:** Open to Senior Product Manager roles in payments, platforms and AI, in Bengaluru or remote, and available to start immediately. Most recent role: Expedia Group (Aug 2024 – Feb 2026).
 
 ## Summary
 
@@ -26,7 +26,7 @@ Oct 2021 – Jul 2024 · Mumbai/Bengaluru, India
 - Scaled the platform from 0 to ₹5,000 Cr per month in total payment volume (TPV) across 30+ enterprise merchants.
 - Led discovery and evaluation of bank-account KYC verification methods (penny-drop, penny-less, and reverse penny-drop via UPI) to reduce onboarding friction for first-time users for the JioBlackRock launch in India.
 - Owned partner integrations: designed and enabled pay modes with payment gateways, banks and NBFCs (Razorpay, Paytm, CCAvenue, Citibank), managing partner onboarding, reliability and settlement flows.
-- Led 0-to-1 development of a Promotional (Offers) Engine driving customer retention through targeted offers; drove a 13x increase in electronics GMV during JioMart's first annual sale in 2022 and an 18% lift in 60-day repeat purchase rate.
+- Led 0-to-1 development of a Promotional Engine driving customer retention through targeted offers; drove a 13x increase in electronics GMV during JioMart's first annual sale in 2022 and an 18% lift in 60-day repeat purchase rate.
 - Launched a self-serve Merchant Onboarding Dashboard, cutting time-to-value from 1 week to 1 hour and significantly reducing support overhead.
 - Oversaw the end-to-end payments experience for 1.5M daily MyJio (telecom) transactions; used data analytics to improve recharge-journey engagement.
 - Aligned product, compliance and banking stakeholders with Indian regulators (NPCI, RBI) to keep money-movement flows compliant and secure.
@@ -60,7 +60,7 @@ Nov 2015 – Dec 2019 · Mumbai/Hyderabad, India
 
 ## Awards
 
-- **Star Performer**, Jio Platforms (Nov 2022) — for the launch of the Promotional (Offers) Engine.
+- **Star Performer**, Jio Platforms (Nov 2022) — for the launch of the Promotional Engine.
 
 ## Education
 
